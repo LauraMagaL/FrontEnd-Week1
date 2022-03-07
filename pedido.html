@@ -5,111 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Levantar pedido</title>
-    <style>
-    *{font-family: Arial, Helvetica, sans-serif;}
-    .footer{
-        position: fixed;
-        left: 10px;
-        bottom: 5px;
-        right: 10px;
-        width: 95%;
-        background-color: blue;
-        color: white;
-        text-align: center;
-        }
-   
-</style>
 </head>
 <body>
-    <img src="./assets/img/galaxy_logo.png" alt="logo galaxy" width="150px" style="float:right">
+    <img src="./assets/img/alienacologo.png" alt="logo alienaco" width="150px1" style="float:right">
     <h1>Aquí tomamos su orden</h1>
 
     <form action="pedido.js">
-        <label for="Nombre">¿Cuál es su nombre?:</label>
+        <label for="Nombre">Danos tu nombre Alien:</label><br>
         <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
         <br><br>
-        <label>¿Cuál es su correo electrónico?</label>
-        <input type="correo" name="correo" id="correo" placeholder="correo">
-        <br><br>
-        <label>¿Teléfono donde lo podamos contactar?</label>
-        <input type="tel" name="tel" id="tel" placeholder="teléfono">
+        <label for="number">Tu mesa es (Seleccione el número de mesa):</label><br>
+        <input type="number" name="mesa" id="mesa" placeholder="4">
         <br><br>
         
+        <p>¿Para aquí o para llevar?</p><br>
+        <input type="radio" id="aqui" name="aquiollevar" value="Aquí">
+        <label for="roja">Aquí</label><br>
+        <input type="radio" id="llevar" name="aquiollevar" value="Llevar">
+        <label for="roja">Para llevar</label><br>
+<br><br>
+        <p>¿De qué tacos quieres?</p>
+        <input type="checkbox" id="mercurio" name="mercurio" value="Mercurio">
+        <label for="mercurio">Mercurio</label>
+        <input type="number" name="mercuriocuantos" id="mercuriocuantos" placeholder="¿Cuántos?"><br>
 
-        <p>¿Qué pastel quisiera pedir?</p>
-        <label for="pastel"></label>
-        <select name="pastel" id="pastel">
-            <option value="Tres leches">Tres Leches</option>
-            <option value="Frutos Exóticos">Frutos Exóticos</option>
-            <option value="Trufa">Trufa</option>
-            <option value="Red Velvet">Red Velvet</option>
-            <option value="Piñon">Piñón</option>
-            <option value="Choco con Zarzamora">Chocolate con Zarzamora</option>
-            <option value="3 chocolates">3 Chocolates</option>   
-            <option value="personalizado">Personalizado</option>                
-        </select>
-       <hr>
-        <br>
-        <p>¡Arma tu pastel!(puedes seleccionar sólo 2 panes y hasta 2 rellenos)</p><br>
-        <p>Pan:</p>
-        <div>
-            <input type="checkbox" id="panchoco" name="panchoco">
-            <label for="panchoco">Pan de Chocolate</label>
-        </div>
-        <div>
-            <input type="checkbox" id="panvaini" name="panvaini">
-            <label for="panvaini">Pan de Vainilla</label>
-        </div>
-        <div>
-            <input type="checkbox" id="zanahoria" name="zanahoria">
-            <label for="zanahoria">Pan de Zanahoria</label>
-        </div>
-         <p>Relleno:</p> 
-         <div>
-            <input type="checkbox" id="fresa" name="fresa">
-            <label for="fresa">Relleno de Fresa</label>
-        </div>
-        <div>
-            <input type="checkbox" id="zarza" name="zarza">
-            <label for="zarza">Relleno de zarzamora</label>
-        </div>
-        <div>
-            <input type="checkbox" id="crema" name="crema">
-            <label for="crema">Relleno de crema pastelera</label>
-        </div>
-        <div>
-            <input type="checkbox" id="nata" name="nata">
-            <label for="nata">Relleno de nata</label>
-        </div>
-        <br><br>
-        <hr>
-         <p>Escoge tus adornos o accesorios:</p>
-          <div>
-            <input type="checkbox" id="letras" name="letras">
-            <label for="letras">Letras o números</label>
-            <label for="let">Escriba el número o letras que quiera formar:</label>
-            <input type="let" name="let" id="let" placeholder="" size="4">
-          </div>
-          <div>
-            <input type="checkbox" id="adorno" name="adorno">
-            <label for="adorno">Adorno con chantillil especial galáctico</label>
-            <label for="adorn">¿Cuántos?:</label>
-            <input type="adorn" name="adorn" id="adorn" placeholder="" size="4">
-          </div>
-          <div>
-            <input type="checkbox" id="gorritos" name="gorritos">
-            <label for="gorritos">Paquete de 4 gorritos de fiesta</label>
-            <label for="gorrn">¿Cuántos?:</label>
-            <input type="gorrn" name="gorrn" id="gorrn" placeholder="" size="4">
-          </div>
-          <div>
-            <input type="checkbox" id="algo" name="algo">
-            <label for="algo">¿Algo más?(se aceptan peticiones especiales):</label>
-            <input type="peticion" name="peticion" id="peticion" placeholder="" size="4">
-          </div>
+        <input type="checkbox" id="marte" name="marte" value="Marte">
+        <label for="marte">Marte</label>
+        <input type="number" name="martecuantos" id="martecuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="venus" name="venus" value="Venus">
+        <label for="venus">Venus</label>
+        <input type="number" name="venuscuantos" id="venuscuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="tierra" name="tierra" value="Tierra">
+        <label for="tierra">Tierra</label>
+        <input type="number" name="tierracuantos" id="tierracuantos" placeholder="¿Cuántos?"><br>
+
+        <input type="checkbox" id="jupiter" name="jupiter" value="Jupiter">
+        <label for="jupiter">Jupiter</label>
+        <input type="number" name="jupitercuantos" id="jupitercuantos" placeholder="¿Cuántos?"><br>
+       
         <br><br>
 
-        <p>¿O prefiere un paquete de adornos?</p>
+        <p>¿Con qué salsa quiere sus tacos?</p>
+        <input type="radio" id="roja" name="salsas" value="Roja">
+        <label for="roja">Roja</label><br>
+        <input type="radio" id="verde" name="salsas" value="Verde">
+        <label for="roja">Verde</label><br>
+        <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+        <label for="roja">Guacamole</label>
+
+        <br><br>
+
+        <p>¿Y para tomar?</p>
         <label for="tacos"></label>
         <select name="refresco" id="refresco">
             <option value="Coca Cola">Coca-Cola</option>
@@ -126,12 +74,3 @@
     <br><br>
     </form>
 </body>
-<div class="footer">
-    Av. Paseos del Bosque #756, Col. Lomas del Bosque, CDMX.
-    <br>
-    Tel. 554874851
-    <br>
-    Horarios: Lun-Viernes de 09:00 - 22:00 hrs; Sabado y Domingo de 10:00 - 20:00 hrs
-
-</div>
- </html>
